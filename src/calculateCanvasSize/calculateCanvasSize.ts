@@ -6,5 +6,9 @@ export default function calculateCanvasSize(length: string, width: string) {
     throw new Error("Invalid input: length and width must be numbers");
   }
 
+  if (parsedLength < 0 || parsedWidth < 0) {
+    throw new Error("Length and width must be positive numbers");
+  }
+
   return parsedLength * parsedWidth;
 }
