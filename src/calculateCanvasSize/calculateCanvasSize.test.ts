@@ -23,3 +23,9 @@ test("returns correct result with decimal inputs", () => {
   const result = calculateCanvasSize("10.5", "2");
   expect(result).toEqual(21);
 });
+
+//test for negative numbers
+test("throws error when length or width is negative", () => {
+  expect(() => calculateCanvasSize("-5", "10")).toThrow("Length and width must be positive numbers");
+  expect(() => calculateCanvasSize("5", "-10")).toThrow("Length and width must be positive numbers");
+});
