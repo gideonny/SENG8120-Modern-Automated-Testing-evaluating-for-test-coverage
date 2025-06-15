@@ -17,3 +17,9 @@ test("throws error when inputs are not valid numbers", () => {
 test("throws error when inputs are missing", () => {
   expect(() => calculateCanvasSize("", "")).toThrow("Invalid input: length and width must be numbers");
 });
+
+//test to support decimal points
+test("returns correct result with decimal inputs", () => {
+  const result = calculateCanvasSize("10.5", "2");
+  expect(result).toEqual(21);
+});
