@@ -7,3 +7,8 @@ describe("paint required calculator", () => {
     expect(result).toEqual(5);
   });
 });
+
+//Tests for error handling
+test("throws error when coverage per liter is zero", () => {
+  expect(() => paintRequiredCalculator(100, 0)).toThrow("Coverage per liter must be greater than zero");
+});
