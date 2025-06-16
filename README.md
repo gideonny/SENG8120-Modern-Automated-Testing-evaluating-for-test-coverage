@@ -57,3 +57,30 @@ To run a specific test, you can use
 npm run test [my test name]
 ```
 
+## Test-Driven Development (TDD) Approach
+
+This project follows a **Test-Driven Development** methodology
+
+### Example Functions
+
+- `calculateCanvasSize(length, width)`
+  - Returns the canvas area.
+  - Validates numeric input.
+- `calculatePaintRequired(area)`
+  - Calculates required paint based on area.
+  - Includes error handling for invalid input.
+
+## Implemented Features
+
+- ✅ Canvas area calculator  
+- ✅ Paint requirement estimator  
+- ✅ Input validation and error handling  
+ 
+
+ ## Author(s)
+
+Further developed by **Gideon Nyamuame**
+
+Github: https://github.com/gideonny/SENG8120-Modern-Automated-Testing-evaluating-for-test-coverage
+
+Link to original code: https://github.com/conestogac-acsit/SENG8120-Modern-Automated-Testing/tree/evaluating-for-test-coverage
